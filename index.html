@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="Styles/style.css" />
 </head>
 <body>
+    <!-- Heading  -->
   <h1>Welcome to the Smoothie Machine</h1>
 
+  <!-- FORM FOR SMOOTHIE -->
     <form id="smoothieForm">
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required /><br><br>
 
+        <!-- SIZE LABEL -->
         <label for="size">Choose a size ($):</label>
         <select id="size" name="size" required>
             <option value="">--Select--</option>
@@ -21,6 +24,7 @@
             <option value="Large">Large - $6.00</option>
         </select><br><br>
 
+        <!-- CHOOSE BASE -->
         <label for="base">Choose a base liquid ($1.00):</label>
         <select id="base" name="base" required>
             <option value="">--Select--</option>
@@ -31,6 +35,7 @@
             <option value="Soy Milk">Soy Milk</option>
         </select><br><br>
 
+        <!-- ADD FRUITS -->
         <fieldset>
             <legend>Choose your fruits ($0.75 each):</legend>
             <label><input type="checkbox" name="ingredients" value="Banana"> Banana</label><br>
@@ -40,6 +45,7 @@
             <label><input type="checkbox" name="ingredients" value="Pineapple"> Pineapple</label><br>
         </fieldset><br>
 
+        <!-- OTHER ADD ONS -->
         <fieldset>
             <legend>Add-ons ($1.25 each):</legend>
             <label><input type="checkbox" name="addons" value="Protein Powder"> Protein Powder</label><br>
@@ -48,6 +54,7 @@
             <label><input type="checkbox" name="addons" value="Flax Seeds"> Flax Seeds</label><br>
         </fieldset><br>
 
+        <!-- SWEETNER? -->
         <label for="sweetener">Sweetener (optional, $0.50):</label>
         <select id="sweetener" name="sweetener">
             <option value="None">None</option>
@@ -56,6 +63,7 @@
             <option value="Sugar-Free Syrup">Sugar-Free Syrup</option>
         </select><br><br>
 
+        <!-- TEMPERATURE SELECTOR -->
         <label for="temp">Choose temperature:</label>
         <select id="temp" name="temp">
             <option value="Cold">Cold</option>
@@ -63,13 +71,18 @@
             <option value="With Ice">With Ice</option>
         </select><br><br>
 
+        <!-- ANY OTHER INSTRUCTIONS -->
         <label for="notes">Special Instructions:</label><br>
         <textarea id="notes" name="notes" rows="3" cols="30" placeholder="Anything else we should know?"></textarea><br><br>
 
+        <!-- SUBMIT BUTTON -->
         <button type="submit">Order Smoothie</button>
     </form>
 
+    <!-- OUTPUT DIV -->
   <div id="smoothieOutput"></div>
+
+    <!-- SMOOTHIE IMAGE -->
   <div id="smoothieImage">
     <img src="smoothie.webp" alt="smoothies" id="smoothiePic" class="hide">
   </div>

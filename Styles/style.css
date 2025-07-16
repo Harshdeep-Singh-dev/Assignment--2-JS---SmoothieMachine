@@ -91,3 +91,23 @@ button[type="submit"]:hover {
   font-size: 1rem;
   color: #2d3436;
 }
+
+
+#smoothieImage {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#smoothiePic {
+  display: none;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.8s ease-in-out;
+}
+
+#smoothiePic.show {
+  display: block;
+  opacity: 1;
+}

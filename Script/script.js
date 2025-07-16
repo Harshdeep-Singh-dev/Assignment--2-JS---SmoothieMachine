@@ -76,6 +76,9 @@ document.getElementById("smoothieForm").addEventListener("submit", function(even
 
   const smoothie = new Smoothie(name, size, base, fruits, addons, sweetener, temperature, notes);
   document.getElementById("smoothieOutput").innerHTML = smoothie.getDescription();
+  
+  const smoothiePic = document.getElementById("smoothiePic");
+  smoothiePic.classList.add("show");
 });
 
 

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f7f1e3, #dff9fb);
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #130f40;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #30336b;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+fieldset {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid #c7ecee;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+legend {
+  font-weight: bold;
+  color: #22a6b3;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+button[type="submit"] {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #6ab04c;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #44bd32;
+}
+
+#smoothieOutput {
+  margin-top: 2rem;
+  background-color: #dff9fb;
+  border-left: 5px solid #22a6b3;
+  padding: 1rem;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #2d3436;
+}
